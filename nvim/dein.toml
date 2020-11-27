@@ -48,12 +48,21 @@ hook_add = '''
 repo = 'kristijanhusak/defx-icons'
 ##############
 
-
 [[plugins]] # バイナリエディター
 repo = 'Shougo/vinarise.vim'
 hook_add = '''
 	source ~/.config/nvim/plugins/vinarise.rc.vim
 '''
+
+
+# Git系プラグイン#############
+[[plugins]]
+repo = 'tpope/vim-fugitive'
+
+[[plugins]]
+repo = 'airblade/vim-gitgutter'
+
+############################
 
 
 # 装飾系プラグイン#############
