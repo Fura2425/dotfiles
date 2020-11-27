@@ -1,0 +1,106 @@
+[[plugins]] # 補完系プラグイン
+repo = 'neoclide/coc.nvim'
+rev = 'release'
+on_i = 1
+merged = '0'
+hook_add = '''
+	source ~/.config/nvim/plugins/coc.rc.vim
+'''
+
+[[plugins]] # ランナー系プラグイン
+repo = 'thinca/vim-quickrun'
+hook_add = '''
+	source ~/.config/nvim/plugins/quickrun.rc.vim
+'''
+
+[[plugins]] # 非同期実行
+repo = 'Shougo/vimproc.vim'
+build = 'make'
+
+[[plugins]] # オープンブラウザー
+repo = 'tyru/open-browser.vim'
+
+[[plugins]] # ファインダー系プラグイン
+repo = 'Shougo/denite.nvim'
+hook_add = '''
+	source ~/.config/nvim/plugins/denite.rc.vim
+'''
+
+[[plugins]]
+repo = 'junegunn/fzf'
+
+[[plugins]]
+repo = 'junegunn/fzf.vim'
+
+[[plugins]] # ステータスライン拡張
+repo = 'itchyny/lightline.vim'
+hook_add = '''
+	source ~/.config/nvim/plugins/lightline.rc.vim
+	'''
+
+# Defx########
+[[plugins]] # ファイラー系プラグイン
+repo = 'Shougo/defx.nvim'
+hook_add = '''
+	source ~/.config/nvim/plugins/defx.rc.vim
+'''
+[[plugins]] # defxIcon
+repo = 'kristijanhusak/defx-icons'
+##############
+
+
+[[plugins]] # バイナリエディター
+repo = 'Shougo/vinarise.vim'
+hook_add = '''
+	source ~/.config/nvim/plugins/vinarise.rc.vim
+'''
+
+
+# 装飾系プラグイン#############
+[[plugins]] # カラースキーム
+repo = 'cocopon/iceberg.vim'
+hook_add = '''
+	source ~/.config/nvim/plugins/iceberg.rc.vim
+	colorscheme iceberg
+'''
+
+[[plugins]] # iconセット
+repo = 'ryanoasis/vim-devicons'
+
+[[plugins]] # インデント可視化
+repo = 'Yggdroot/indentLine'
+hook_add = '''
+	let g:indentLine_faster = 1
+	set list lcs=tab:\|\
+'''
+
+[[plugins]] # 空白可視化
+repo = 'bronson/vim-trailing-whitespace'
+hook_add = '''
+	source ~/.config/nvim/plugins/vim-trailing-whitespace.rc.vim
+'''
+
+[[plugins]] # 多言語パック
+repo = 'sheerun/vim-polyglot'
+hook_add = '''
+	source ~/.config/nvim/plugins/vim-polyglot.rc.vim
+'''
+
+[[plugins]] # タグリスト表示
+repo = 'preservim/tagbar'
+hook_add = '''
+	source ~/.config/nvim/plugins/tagbar.rc.vim
+'''
+############################
+
+
+# その他のプラグイン##########
+[[plugins]]
+repo = 'wakatime/vim-wakatime'
+
+[[plugins]] # markdown preview
+repo = 'previm/previm'
+hook_add = '''
+	source ~/.config/nvim/plugins/previm.rc.vim
+'''
+############################
