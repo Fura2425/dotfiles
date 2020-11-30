@@ -54,8 +54,8 @@ let mapleader = "\<Space>" "Leaderキーをスペースキーに変更
 " 行移動
 nnoremap j gj
 nnoremap k gk
-nnoremap gk k
 nnoremap gj j
+nnoremap gk k
 
 " ページ移動
 noremap <C-n> <C-f>
