@@ -1,3 +1,5 @@
+#!/bin/bash
+
 defaults write com.apple.finder AppleShowAllFiles TRUE
 killall Finder
 
@@ -10,16 +12,18 @@ echo 'install Homebrew...'
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 echo 'installed Homebrew'
 
-echo "run brew doctor..."
+echo "Run brew doctor..."
 brew doctor
-echo "OK, run brew update..."
+echo "OK, Run brew update..."
 brew update
-echo "OK, run brew upgrade..."
+echo "OK, Run brew upgrade..."
 brew upgrade
 
-echo 'install brew formula...'
+
+echo 'brew install formula...'
 brew bundle --global
-echo 'installed brew formula'
+echo 'brew installed formula'
 
 brew cleanup
 
+echo 'Complete!!'
