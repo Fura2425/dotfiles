@@ -1,4 +1,4 @@
-nnoremap <silent> <Leader>r :<C-u> QuickRun <CR>
+nnoremap <silent> <Leader>rc :<C-u> QuickRun <CR>
 nnoremap <Leader>q :<C-u>bw! \[quickrun\ output\]<CR>
 
 """"""""""""""""""""""""""""""""""

@@ -1,6 +1,7 @@
 # 何のためのやつか忘れたやつ
 # export PATH=~/jdk-11.0.2/bin:$PATH
 
+export PATH='/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:$PATH'
 
 alias brew='PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin brew'
 
@@ -11,15 +12,12 @@ export PATH="$HOME/.cargo/bin:$PATH"
 export LIBRARY_PATH="$LIBRARY_PATH:/usr/local/lib"
 
 
-# pyenv 必要パス
-export PYENV_ROOT="$HOME/.pyenv"
-export PATH="$PYENV_ROOT/bin:$PATH"
-eval "$(pyenv init -)"
-#eval "$(pyenv virtualenv-init -)"
-
 # python
-export PATH="$HOME/.pyenv/shims:$PATH"
+export PATH=/Library/Frameworks/Python.framework/Versions/3.9/bin:$PATH
 
+# rbenv
+export PATH="$HOME/.rbenv/bin:$PATH"
+eval "$(rbenv init -)"
 
 
 # .bash_profile内で.bashrcを読み込む

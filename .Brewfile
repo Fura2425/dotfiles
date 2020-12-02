@@ -1,17 +1,17 @@
-# tap
 tap "delphinus/sfmono-square"
-#tap "homebrew/bundle"
+tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "homebrew/cask-fonts"
 tap "homebrew/core"
 tap "muesli/tap"
 tap "sanemat/font"
-
-# brew
 brew "automake"
 brew "bash"
 brew "binutils"
 brew "fontconfig"
+brew "openssl@1.1"
+brew "python@3.9"
+brew "python@3.8"
 brew "clang-format"
 brew "cmake"
 brew "cmatrix"
@@ -32,7 +32,7 @@ brew "neofetch"
 brew "neovim"
 brew "node", link: false
 brew "nodebrew"
-brew "pyenv"
+brew "ruby-build"
 brew "rbenv"
 brew "sdl2"
 brew "starship"
@@ -46,15 +46,11 @@ brew "zsh"
 brew "delphinus/sfmono-square/sfmono-square"
 brew "muesli/tap/duf"
 brew "sanemat/font/ricty"
-
-# cask
 cask "blackhole"
 cask "docker"
 cask "font-hack-nerd-font"
 cask "hyper"
 cask "xquartz"
-
-# mas
 mas "Amphetamine", id: 937984704
 mas "BetterSnapTool", id: 417375580
 mas "Cinebench", id: 1438772273

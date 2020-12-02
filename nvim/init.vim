@@ -1,5 +1,5 @@
-let g:python_host_prog  = '$HOME/.pyenv/versions/2.7.16/bin/python2'
-let g:python3_host_prog = '$HOME/.pyenv/versions/3.8.0/bin/python3'
+let g:python_host_prog  = '/usr/bin/python'
+let g:python3_host_prog = '/usr/local/bin/python3.9'
 let g:wakatime_PythonBinary = '/usr/bin/python'  " (Default: 'python')
 """"""""""""""""""""""""""""""""""
 " 基本設定
@@ -27,7 +27,7 @@ set updatetime=100 "100msでswapファイルに書き込み
 set whichwrap +=h
 set whichwrap +=l
 set smartindent "自動的にインデントを調整
-set noexpandtab "インデントをtabをして認識
+set expandtab "インデントをスペースとして認識
 set tabstop=4 "インデント数の設定
 set softtabstop=4 "<Tab>を押したときのインデント数を設定
 set shiftwidth=4  "ノーマル・インサートでのコマンドによるインデント数を設定
@@ -68,7 +68,7 @@ noremap<C-k> <C-w>k
 noremap <C-l> <C-w>l
 
 " その他
-noremap <silent> <Esc> :nohlsearch<CR> " D-escによるハイライト消去
+noremap <silent> <Esc><Esc> :nohlsearch<CR> " D-escによるハイライト消去
 noremap <silent> <Space><Space> "zyiw:let @/ = '\<' . @z . '\>'<CR>:set hlsearch<CR>
 noremap <silent> == gg=G :<C-u> FixWhitespace <CR> " インデント整形＆余分空白削除
 

@@ -32,21 +32,26 @@ repo = 'junegunn/fzf'
 [[plugins]]
 repo = 'junegunn/fzf.vim'
 
+[[plugins]] # スタート画面カスタマイズ
+repo = 'mhinz/vim-startify'
+
 [[plugins]] # ステータスライン拡張
 repo = 'itchyny/lightline.vim'
 hook_add = '''
 	source ~/.config/nvim/plugins/lightline.rc.vim
 	'''
 
-# Defx########
 [[plugins]] # ファイラー系プラグイン
 repo = 'Shougo/defx.nvim'
 hook_add = '''
 	source ~/.config/nvim/plugins/defx.rc.vim
 '''
-[[plugins]] # defxIcon
-repo = 'kristijanhusak/defx-icons'
-##############
+
+[[plugins]] # 括弧編集系プラグイン
+repo = 'tpope/vim-surround'
+
+[[plugins]] # ウィンドウサイジング
+repo = 'simeji/winresizer'
 
 [[plugins]] # バイナリエディター
 repo = 'Shougo/vinarise.vim'
@@ -70,17 +75,18 @@ repo = 'airblade/vim-gitgutter'
 repo = 'cocopon/iceberg.vim'
 hook_add = '''
 	source ~/.config/nvim/plugins/iceberg.rc.vim
-	colorscheme iceberg
 '''
 
 [[plugins]] # iconセット
 repo = 'ryanoasis/vim-devicons'
 
+[[plugins]] # defxIcon
+repo = 'kristijanhusak/defx-icons'
+
 [[plugins]] # インデント可視化
 repo = 'Yggdroot/indentLine'
 hook_add = '''
-	let g:indentLine_faster = 1
-	set list lcs=tab:\|\
+	source ~/.config/nvim/plugins/indentLine.rc.vim
 '''
 
 [[plugins]] # 空白可視化
@@ -100,6 +106,9 @@ repo = 'preservim/tagbar'
 hook_add = '''
 	source ~/.config/nvim/plugins/tagbar.rc.vim
 '''
+
+[[plugins]] # テンプレート生成
+repo = 'mattn/vim-sonictemplate'
 ############################
 
 
