@@ -13,6 +13,9 @@ for f in .??*; do
 	ln -snfv ${PWD}/"$f" ~/
 done
 
-ln -snfv ~/dotfiles/nvim/ ~/.config/
+ln -sf ~/dotfiles/nvim/ ~/.config/
+ln -sf ~/dotfiles/fish/ ~/.config/
+ln -sf ~/dotfiles/starship.toml ~/.config/
+ln -sf ~/dotfiles/bat/ ~/.config/
 
 echo 'Complete!!'

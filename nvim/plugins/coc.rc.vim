@@ -1,7 +1,5 @@
 " menuoneで、対象が1件しかなくても常に補完ウィンドウを表示していて、noinsertで補完ウィンドウを表示時に挿入しない
 set completeopt=menuone,noinsert
-" Enterキーで補完を確定する
-noremap! <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<C-h>"
 
 " TextEdit might fail if hidden is not set.
 set hidden

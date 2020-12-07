@@ -1,0 +1,6 @@
+# starshipが現在のディレクトリ下のファイルをチェックするまで10ミリ秒待ちます
+scan_timeout = 10
+
+# Which is equivalent to
+format = "$all"
+

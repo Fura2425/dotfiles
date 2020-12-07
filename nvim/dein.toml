@@ -26,12 +26,6 @@ hook_add = '''
 	source ~/.config/nvim/plugins/denite.rc.vim
 '''
 
-[[plugins]]
-repo = 'junegunn/fzf'
-
-[[plugins]]
-repo = 'junegunn/fzf.vim'
-
 [[plugins]] # スタート画面カスタマイズ
 repo = 'mhinz/vim-startify'
 

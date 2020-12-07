@@ -15,9 +15,14 @@ export LIBRARY_PATH="$LIBRARY_PATH:/usr/local/lib"
 # python
 export PATH=/Library/Frameworks/Python.framework/Versions/3.9/bin:$PATH
 
+
 # rbenv
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
+
+
+# hub
+eval "$(hub alias -s)"
 
 
 # .bash_profile内で.bashrcを読み込む

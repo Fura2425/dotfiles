@@ -19,10 +19,26 @@
 
 # エイリアス
 alias ..='cd ..'
+alias ...='cd ../..'
+alias ....='cd ../../..'
 alias ls='ls -FG'
+alias ll='ls -lFG'
 alias la='ls -alFG'
-alias j=z
+
+alias dot='cd ~/dotfiles'
+
+alias wp='cd ~/workspace/programming'
+alias wpr='cd ~/workspace/programming/rust'
+alias wpc='cd ~/workspace/programming/c'
+alias wpa='cd ~/workspace/programming/assembly'
+alias wpb='cd ~/workspace/programming/binary'
+
+alias wpj='cd ~/workspace/projects'
+
 alias n=nvim
+alias j=z
+# Ghidra
+alias ghidra='open /Applications/ghidra_9.1.1_PUBLIC/ghidraRun'
 
 
 function llvm (){
@@ -38,19 +54,18 @@ then
     alias rm=trash-put
 fi
 
-# fzf
-[ -f ~/.fzf.bash ] && source ~/.fzf.bash
-export FZF_DEFAULT_OPTS='--height 60% --reverse --border'
-export FZF_ALT_C_OPTS="--select-1 --exit-0"
-#export FZF_ALT_C_OPTS="--preview 'tree -C {} | head -200'"
-
 # zコマンド
 source ~/z/z.sh
 
+# bat
+export BAT_CONFIG_PATH="$HOME/.config/bat/config/bat.conf"
+
+# fzf
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash
+export FZF_DEFAULT_OPTS='--height 60% --reverse --border'
+export FZF_CTRL_T_OPTS='--preview "bat  --color=always --style=header,grid --line-range :100 {}"'
+export FZF_ALT_C_OPTS="--preview 'tree -C {} | head -200'"
+
+
 # wakatime
 source ~/bash-wakatime/bash-wakatime.sh
-
-
-
-# Ghidra
-alias ghidra='open /Applications/ghidra_9.1.1_PUBLIC/ghidraRun'
