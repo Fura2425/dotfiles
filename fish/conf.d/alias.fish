@@ -1,4 +1,3 @@
-alias brew='PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin brew'
 alias ghidra='open /Applications/ghidra_9.1.1_PUBLIC/ghidraRun'
 
 alias ...='cd ../..'

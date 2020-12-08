@@ -1,6 +1,5 @@
 starship init fish | source
 
-
 # hub
 eval (hub alias -s)
 
