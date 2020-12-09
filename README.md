@@ -17,15 +17,16 @@
 
 # NeoVim
 ## coc extensions List
-- coc-go
-- coc-tsserver
-- coc-snippets
-- coc-sh
-- coc-rust-analyzer
-- coc-python
-- coc-json
-- coc-html
-- coc-docker
-- coc-css
-- coc-cmake
 - coc-clangd
+- coc-cmake
+- coc-css
+- coc-docker
+- coc-go
+- coc-html
+- coc-json
+- coc-python
+- coc-rust-analyzer
+- coc-sh
+- coc-snippets
+- coc-tsserver
+- coc-xml

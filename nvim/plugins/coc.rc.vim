@@ -1,5 +1,5 @@
 " menuoneで、対象が1件しかなくても常に補完ウィンドウを表示していて、noinsertで補完ウィンドウを表示時に挿入しない
-set completeopt=menuone,noinsert
+set completeopt=menuone
 
 " TextEdit might fail if hidden is not set.
 set hidden
