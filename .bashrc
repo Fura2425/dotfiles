@@ -37,6 +37,9 @@ alias wpj='cd ~/workspace/projects'
 
 alias n=nvim
 alias j=z
+
+alias silicon='silicon --shadow-blur-radius 15 --background "#5550" --font "Ricty"'
+
 # Ghidra
 alias ghidra='open /Applications/ghidra_9.1.1_PUBLIC/ghidraRun'
 

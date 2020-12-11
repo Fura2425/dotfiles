@@ -1,5 +1,6 @@
 nnoremap <silent> <Leader>rc :<C-u> QuickRun <CR>
 nnoremap <Leader>q :<C-u>bw! \[quickrun\ output\]<CR>
+inoremap <silent> <C-r> <Esc>:<C-u> QuickRun <CR>
 
 """"""""""""""""""""""""""""""""""
 "QuickRunQuit
@@ -38,10 +39,7 @@ let g:quickrun_config = {
             \	'exec': '%c run %o',
             \	'hook/shebang/enable': 0,
             \},
-            \'python' : {
-            \	'exec' : 'python3',
-            \	'hook/sweep/files': '%S:p:r',
-            \},
+            \'python': {'hook/eval/template': 'print(%s)'},
             \ 'go': {
             \   'command': 'go',
             \   'exec': '%c run %s:p:t %a',

@@ -76,10 +76,10 @@ noremap <silent> == gg=G :<C-u> FixWhitespace <CR> " インデント整形＆余
 inoremap <silent> <C-f> <ESC>
 
 " インサートモードでのカーソル移動
-inoremap <C-j> <C-o>gj
 inoremap <C-k> <C-o>gk
 inoremap <C-l> <right>
 
+inoremap <C-j> <C-o><CR>
 
 
 "dein Scripts-----------------------------

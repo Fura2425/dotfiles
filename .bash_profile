@@ -5,11 +5,20 @@ export PATH='/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:$PATH'
 
 alias brew='PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin brew'
 
+# java ;xml LSP のため
+export JAVA_HOME=`/usr/libexec/java_home`
+
 
 # rust
 export PATH="$HOME/.cargo/bin:$PATH"
 # rust sdl
 export LIBRARY_PATH="$LIBRARY_PATH:/usr/local/lib"
+
+
+# go
+#export GOPATH=$HOME/golang/go
+#export PATH=$GOPATH/bin:$PATH
+#export GO111MODULE=on
 
 
 # python

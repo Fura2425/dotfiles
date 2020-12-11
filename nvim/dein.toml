@@ -110,6 +110,12 @@ repo = 'mattn/vim-sonictemplate'
 [[plugins]]
 repo = 'wakatime/vim-wakatime'
 
+[[plugins]]
+repo = 'segeljakt/vim-silicon'
+hook_add = '''
+    source ~/.config/nvim/plugins/vim-silicon.rc.vim
+'''
+
 [[plugins]] # markdown preview
 repo = 'previm/previm'
 hook_add = '''
