@@ -35,8 +35,9 @@ alias wpb='cd ~/workspace/programming/binary'
 
 alias wpj='cd ~/workspace/projects'
 
-alias n=nvim
-alias j=z
+alias n='nvim'
+alias j='z'
+alias lg='lazygit'
 
 alias silicon='silicon --shadow-blur-radius 15 --background "#5550" --font "Ricty"'
 

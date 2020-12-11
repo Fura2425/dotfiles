@@ -17,4 +17,4 @@ alias wpj='cd ~/workspace/projects'
 
 alias n='nvim'
 alias j='z'
-
+alias lg='lazygit'

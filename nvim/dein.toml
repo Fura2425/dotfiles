@@ -58,9 +58,6 @@ hook_add = '''
 [[plugins]]
 repo = 'tpope/vim-fugitive'
 
-[[plugins]]
-repo = 'airblade/vim-gitgutter'
-
 ############################
 
 
@@ -101,8 +98,6 @@ hook_add = '''
 	source ~/.config/nvim/plugins/tagbar.rc.vim
 '''
 
-[[plugins]] # テンプレート生成
-repo = 'mattn/vim-sonictemplate'
 ############################
 
 
