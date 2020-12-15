@@ -30,9 +30,6 @@ export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
 
 
-# hub
-eval "$(hub alias -s)"
-
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
