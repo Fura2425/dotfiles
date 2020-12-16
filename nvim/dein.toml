@@ -26,14 +26,14 @@ hook_add = '''
 	source ~/.config/nvim/plugins/denite.rc.vim
 '''
 
-[[plugins]] # スタート画面カスタマイズ
-repo = 'mhinz/vim-startify'
+#[[plugins]] # スタート画面カスタマイズ
+#repo = 'mhinz/vim-startify'
 
-[[plugins]] # ステータスライン拡張
-repo = 'itchyny/lightline.vim'
-hook_add = '''
-	source ~/.config/nvim/plugins/lightline.rc.vim
-	'''
+#[[plugins]] # ステータスライン拡張
+#repo = 'itchyny/lightline.vim'
+#hook_add = '''
+#	source ~/.config/nvim/plugins/lightline.rc.vim
+#	'''
 
 [[plugins]] # ファイラー系プラグイン
 repo = 'Shougo/defx.nvim'

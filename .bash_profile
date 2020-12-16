@@ -50,5 +50,5 @@ unset __conda_setup
 
 # .bash_profile内で.bashrcを読み込む
 if [ -f ~/.bashrc ] ; then
-	. ~/.bashrc
+    . ~/.bashrc
 fi

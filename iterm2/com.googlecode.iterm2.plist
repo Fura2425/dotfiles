@@ -2,16 +2,6 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>AppleAntiAliasingThreshold</key>
-	<integer>1</integer>
-	<key>ApplePressAndHoldEnabled</key>
-	<false/>
-	<key>AppleScrollAnimationEnabled</key>
-	<integer>0</integer>
-	<key>AppleSmoothFixedFontsSizeThreshold</key>
-	<integer>1</integer>
-	<key>AppleWindowTabbingMode</key>
-	<string>manual</string>
 	<key>Control</key>
 	<integer>1</integer>
 	<key>Custom Color Presets</key>
@@ -3385,11 +3375,11 @@
 			<key>Ansi 1 Color</key>
 			<dict>
 				<key>Blue Component</key>
-				<real>0.48627451062202454</real>
+				<real>0.0</real>
 				<key>Green Component</key>
-				<real>0.47450980544090271</real>
+				<real>0.0</real>
 				<key>Red Component</key>
-				<real>0.87450981140136719</real>
+				<real>0.73333334922790527</real>
 			</dict>
 			<key>Ansi 10 Color</key>
 			<dict>
@@ -3448,38 +3438,38 @@
 			<key>Ansi 2 Color</key>
 			<dict>
 				<key>Blue Component</key>
-				<real>0.48627451062202454</real>
+				<real>0.0</real>
 				<key>Green Component</key>
-				<real>0.61960786581039429</real>
+				<real>0.73333334922790527</real>
 				<key>Red Component</key>
-				<real>0.44705882668495178</real>
+				<real>0.0</real>
 			</dict>
 			<key>Ansi 3 Color</key>
 			<dict>
 				<key>Blue Component</key>
-				<real>0.47058823704719543</real>
+				<real>0.0</real>
 				<key>Green Component</key>
-				<real>0.66274511814117432</real>
+				<real>0.73333334922790527</real>
 				<key>Red Component</key>
-				<real>0.94509804248809814</real>
+				<real>0.73333334922790527</real>
 			</dict>
 			<key>Ansi 4 Color</key>
 			<dict>
 				<key>Blue Component</key>
-				<real>0.83137255907058716</real>
+				<real>0.73333334922790527</real>
 				<key>Green Component</key>
-				<real>0.66274511814117432</real>
+				<real>0.0</real>
 				<key>Red Component</key>
-				<real>0.54509806632995605</real>
+				<real>0.0</real>
 			</dict>
 			<key>Ansi 5 Color</key>
 			<dict>
 				<key>Blue Component</key>
-				<real>0.85882353782653809</real>
+				<real>0.73333334922790527</real>
 				<key>Green Component</key>
-				<real>0.60392159223556519</real>
+				<real>0.0</real>
 				<key>Red Component</key>
-				<real>0.67450982332229614</real>
+				<real>0.73333334922790527</real>
 			</dict>
 			<key>Ansi 6 Color</key>
 			<dict>
@@ -3502,11 +3492,11 @@
 			<key>Ansi 8 Color</key>
 			<dict>
 				<key>Blue Component</key>
-				<real>0.33333333333333331</real>
+				<real>0.3333333432674408</real>
 				<key>Green Component</key>
-				<real>0.33333333333333331</real>
+				<real>0.3333333432674408</real>
 				<key>Red Component</key>
-				<real>0.33333333333333331</real>
+				<real>0.3333333432674408</real>
 			</dict>
 			<key>Ansi 9 Color</key>
 			<dict>
@@ -3524,11 +3514,11 @@
 			<key>Background Color</key>
 			<dict>
 				<key>Blue Component</key>
-				<real>0.091177865862846375</real>
+				<real>0.0</real>
 				<key>Green Component</key>
-				<real>0.071581222116947174</real>
+				<real>0.0</real>
 				<key>Red Component</key>
-				<real>0.069047316908836365</real>
+				<real>0.0</real>
 			</dict>
 			<key>Background Image Location</key>
 			<string></string>
@@ -3556,11 +3546,11 @@
 			<key>Bold Color</key>
 			<dict>
 				<key>Blue Component</key>
-				<real>0.85098040103912354</real>
+				<real>1</real>
 				<key>Green Component</key>
-				<real>0.64705884456634521</real>
+				<real>1</real>
 				<key>Red Component</key>
-				<real>0.48235294222831726</real>
+				<real>1</real>
 			</dict>
 			<key>Character Encoding</key>
 			<integer>4</integer>
@@ -3622,11 +3612,11 @@
 			<key>Foreground Color</key>
 			<dict>
 				<key>Blue Component</key>
-				<real>0.78823530673980713</real>
+				<real>0.73333334922790527</real>
 				<key>Green Component</key>
-				<real>0.78431373834609985</real>
+				<real>0.73333334922790527</real>
 				<key>Red Component</key>
-				<real>0.78039216995239258</real>
+				<real>0.73333334922790527</real>
 			</dict>
 			<key>Guid</key>
 			<string>B39BBDAE-A9B9-4A38-BD24-E8310EDAEFB0</string>
@@ -4004,27 +3994,27 @@
 			<key>Selected Text Color</key>
 			<dict>
 				<key>Blue Component</key>
-				<real>0.84705883264541626</real>
+				<real>0.0</real>
 				<key>Green Component</key>
-				<real>0.65098041296005249</real>
+				<real>0.0</real>
 				<key>Red Component</key>
-				<real>0.45882353186607361</real>
+				<real>0.0</real>
 			</dict>
 			<key>Selection Color</key>
 			<dict>
 				<key>Blue Component</key>
-				<real>0.1989070326089859</real>
+				<real>1</real>
 				<key>Green Component</key>
-				<real>0.0037887054495513439</real>
+				<real>0.8353000283241272</real>
 				<key>Red Component</key>
-				<real>0.10134787112474442</real>
+				<real>0.70980000495910645</real>
 			</dict>
 			<key>Send Code When Idle</key>
 			<false/>
 			<key>Shortcut</key>
 			<string></string>
 			<key>Show Status Bar</key>
-			<true/>
+			<false/>
 			<key>Silence Bell</key>
 			<true/>
 			<key>Space</key>
