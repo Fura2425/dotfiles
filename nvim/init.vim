@@ -50,6 +50,7 @@ set hlsearch "検索結果をハイライト表示
 """"""""""""""""""""""""""""""""""
 let mapleader = "\<Space>" "Leaderキーをスペースキーに変更
 
+"" ノーマルモード
 
 " 行移動
 nnoremap j gj
@@ -73,45 +74,46 @@ noremap <silent> <Space><Space> "zyiw:let @/ = '\<' . @z . '\>'<CR>:set hlsearch
 noremap <silent> == gg=G :<C-u> FixWhitespace <CR> " インデント整形＆余分空白削除
 
 
+"" インサートモード
 inoremap <silent> <C-f> <Esc>
 
 " インサートモードでのカーソル移動
 inoremap <C-k> <C-o>gk
 inoremap <C-l> <right>
 
-inoremap <C-j> <CR>
-
+inoremap <C-j> <Esc>a<CR>
 
 
 
 """"""""""""""""""""""""""""""""""
 " ステータスラインの表示
 """"""""""""""""""""""""""""""""""
-  set statusline=%<     " 行が長すぎるときに切り詰める位置
-  set statusline+=[%n]  " バッファ番号
-  set statusline+=%m    " %m 修正フラグ
-  set statusline+=%r    " %r 読み込み専用フラグ
-  set statusline+=%h    " %h ヘルプバッファフラグ
-  set statusline+=%w    " %w プレビューウィンドウフラグ
-  set statusline+=%{'['.(&fenc!=''?&fenc:&enc).':'.&ff.']'}  " fencとffを表示
-  set statusline+=%y    " バッファ内のファイルのタイプ
-  set statusline+=\     " 空白スペース
+set laststatus=2
+set statusline=%<     " 行が長すぎるときに切り詰める位置
+set statusline+=[%n]  " バッファ番号
+set statusline+=%m    " %m 修正フラグ
+set statusline+=%r    " %r 読み込み専用フラグ
+set statusline+=%h    " %h ヘルプバッファフラグ
+set statusline+=%w    " %w プレビューウィンドウフラグ
+set statusline+=%{'['.(&fenc!=''?&fenc:&enc).':'.&ff.']'}  " fencとffを表示
+set statusline+=%y    " バッファ内のファイルのタイプ
+set statusline+=\     " 空白スペース
 if winwidth(0) >= 130
-  set statusline+=%F    " バッファ内のファイルのフルパス
+    set statusline+=%F    " バッファ内のファイルのフルパス
 else
-  set statusline+=%t    " ファイル名のみ
+    set statusline+=%t    " ファイル名のみ
 endif
-  set statusline+=%=    " 左寄せ項目と右寄せ項目の区切り
-  set statusline+=%{fugitive#statusline()}  " Gitのブランチ名を表示
-  set statusline+=\ \   " 空白スペース2個
-  set statusline+=%1l   " 何行目にカーソルがあるか
-  set statusline+=/
-  set statusline+=%L    " バッファ内の総行数
-  set statusline+=,
-  set statusline+=%c    " 何列目にカーソルがあるか
-  set statusline+=%V    " 画面上の何列目にカーソルがあるか
-  set statusline+=\ \   " 空白スペース2個
-  set statusline+=%P    " ファイル内の何％の位置にあるか
+set statusline+=%=    " 左寄せ項目と右寄せ項目の区切り
+set statusline+=%{fugitive#statusline()}  " Gitのブランチ名を表示
+set statusline+=\ \   " 空白スペース2個
+set statusline+=%1l   " 何行目にカーソルがあるか
+set statusline+=/
+set statusline+=%L    " バッファ内の総行数
+set statusline+=,
+set statusline+=%c    " 何列目にカーソルがあるか
+set statusline+=%V    " 画面上の何列目にカーソルがあるか
+set statusline+=\ \   " 空白スペース2個
+set statusline+=%P    " ファイル内の何％の位置にあるか
 
 
 
@@ -127,7 +129,7 @@ highlight PmenuSel ctermfg=0 ctermbg=13 guibg=#ff00ff
 
 "dein Scripts-----------------------------
 if &compatible
-	set nocompatible               " Be iMproved
+    set nocompatible               " Be iMproved
 endif
 
 " Required:
@@ -138,37 +140,37 @@ let s:dein_repo_dir = s:dein_dir . '/repos/github.com/Shougo/dein.vim'
 
 " If you don't have dein.vim, drop it from github
 if &runtimepath !~# '/dein.vim'
-	if !isdirectory(s:dein_repo_dir)
-		execute '!git clone https://github.com/Shougo/dein.vim' s:dein_repo_dir
-	endif
-	execute 'set runtimepath^=' . fnamemodify(s:dein_repo_dir, ':p')
+    if !isdirectory(s:dein_repo_dir)
+        execute '!git clone https://github.com/Shougo/dein.vim' s:dein_repo_dir
+    endif
+    execute 'set runtimepath^=' . fnamemodify(s:dein_repo_dir, ':p')
 endif
 
 " Required:
 if dein#load_state(s:dein_dir)
-	call dein#begin(s:dein_dir)
+    call dein#begin(s:dein_dir)
 
-	" Let dein manage dein
-	" Required:
-	call dein#add('~/.cache/dein/repos/github.com/Shougo/dein.vim')
+    " Let dein manage dein
+    " Required:
+    call dein#add('~/.cache/dein/repos/github.com/Shougo/dein.vim')
 
-	" Load TOML
-	let s:toml_dir = expand('~/.config/nvim')
-	let s:toml = s:toml_dir . '/dein.toml'
-	let s:lazy_toml = s:toml_dir . '/dein_lazy.toml'
+    " Load TOML
+    let s:toml_dir = expand('~/.config/nvim')
+    let s:toml = s:toml_dir . '/dein.toml'
+    let s:lazy_toml = s:toml_dir . '/dein_lazy.toml'
 
-	" Read TOML and cache it
-	call dein#load_toml(s:toml,         {'lazy': 0})
-	call dein#load_toml(s:lazy_toml, {'lazy': 1})
+    " Read TOML and cache it
+    call dein#load_toml(s:toml,         {'lazy': 0})
+    call dein#load_toml(s:lazy_toml, {'lazy': 1})
 
-	" Required:
-	call dein#end()
-	call dein#save_state()
+    " Required:
+    call dein#end()
+    call dein#save_state()
 endif
 
 " If you want to install not installed plugins on startup.
 if dein#check_install()
-	call dein#install()
+    call dein#install()
 endif
 
 " Required:
