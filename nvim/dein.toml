@@ -1,11 +1,11 @@
-#[[plugins]] # 補完系プラグイン
-#repo = 'neoclide/coc.nvim'
-#rev = 'release'
-#on_i = 1
-#merged = '0'
-#hook_add = '''
-#	source ~/.config/nvim/plugins/coc.rc.vim
-#'''
+[[plugins]] # 補完系プラグイン
+repo = 'neoclide/coc.nvim'
+rev = 'release'
+on_i = 1
+merged = '0'
+hook_add = '''
+	source ~/.config/nvim/plugins/coc.rc.vim
+'''
 
 [[plugins]] # ランナー系プラグイン
 repo = 'thinca/vim-quickrun'
