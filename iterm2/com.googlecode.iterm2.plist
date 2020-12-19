@@ -3325,7 +3325,7 @@
 	<key>DimOnlyText</key>
 	<false/>
 	<key>FlashTabBarInFullscreen</key>
-	<false/>
+	<true/>
 	<key>HapticFeedbackForEsc</key>
 	<false/>
 	<key>HideActivityIndicator</key>

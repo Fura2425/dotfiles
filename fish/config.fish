@@ -6,6 +6,9 @@ set -U __done_notify_sound 1
 #set -U __done_exclude 'git (?!push|pull)'  # default: all git commands, except push and pull. accepts a regex.
 
 
+# hub
+eval (hub alias -s)
+
 
 ##########################################
 # wakatime for fish
