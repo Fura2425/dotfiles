@@ -18,7 +18,7 @@ set updatetime=100 "100msでswapファイルに書き込み
 
 
 
-""""""""""""""""""""""""""""""""""
+"""""""""""""""""""""""""""""""""
 " 行＆移動＆インデント
 """"""""""""""""""""""""""""""""""
 "行頭と行末から行を跨ぐ
@@ -89,20 +89,21 @@ inoremap <C-j> <Esc>a<CR>
 " ステータスラインの表示
 """"""""""""""""""""""""""""""""""
 set laststatus=2
-set statusline=%<     " 行が長すぎるときに切り詰める位置
-set statusline+=[%n]  " バッファ番号
-set statusline+=%m    " %m 修正フラグ
-set statusline+=%r    " %r 読み込み専用フラグ
-set statusline+=%h    " %h ヘルプバッファフラグ
-set statusline+=%w    " %w プレビューウィンドウフラグ
-set statusline+=%{'['.(&fenc!=''?&fenc:&enc).':'.&ff.']'}  " fencとffを表示
+"set statusline=%<     " 行が長すぎるときに切り詰める位置
+"set statusline+=[%n]  " バッファ番号
+"set statusline+=%m    " %m 修正フラグ
+"set statusline+=%r    " %r 読み込み専用フラグ
+"set statusline+=%h    " %h ヘルプバッファフラグ
+"set statusline+=%w    " %w プレビューウィンドウフラグ
+"set statusline+=%{'['.(&fenc!=''?&fenc:&enc).':'.&ff.']'}  " fencとffを表示
 set statusline+=%y    " バッファ内のファイルのタイプ
 set statusline+=\     " 空白スペース
-if winwidth(0) >= 130
-    set statusline+=%F    " バッファ内のファイルのフルパス
-else
-    set statusline+=%t    " ファイル名のみ
-endif
+"if winwidth(0) >= 130
+"    set statusline+=%F    " バッファ内のファイルのフルパス
+"else
+"    set statusline+=%t    " ファイル名のみ
+"endif
+set statusline+=%t    " ファイル名のみ
 set statusline+=%=    " 左寄せ項目と右寄せ項目の区切り
 set statusline+=%{fugitive#statusline()}  " Gitのブランチ名を表示
 set statusline+=\ \   " 空白スペース2個
@@ -178,3 +179,8 @@ filetype plugin indent on
 syntax enable
 
 "End dein Scripts----------------------------------------------------------
+
+
+"自動コメントアウト無効化
+autocmd FileType * setlocal formatoptions-=r
+autocmd FileType * setlocal formatoptions-=o
