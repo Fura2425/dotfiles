@@ -7,7 +7,7 @@ set -U __done_notify_sound 1
 
 
 # hub
-eval (hub alias -s)
+#eval (hub alias -s)
 
 
 ##########################################

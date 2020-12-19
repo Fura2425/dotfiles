@@ -59,7 +59,7 @@ then
 fi
 
 # hub
-eval "$(hub alias -s)"
+#eval "$(hub alias -s)"
 
 # zコマンド
 source ~/z/z.sh
