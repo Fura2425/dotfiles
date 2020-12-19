@@ -1,8 +1,7 @@
 #!/bin/bash
 set -eu
 
-BASEDIR=$(dirname $0)
-cd $BASEDIR
+cd $HOME/dotfiles
 
 echo 'Paste the Symbolic link...'
 for f in .??*; do
@@ -13,9 +12,9 @@ for f in .??*; do
 	ln -snfv ${PWD}/"$f" ~/
 done
 
-ln -sf ~/dotfiles/nvim/ ~/.config/
-ln -sf ~/dotfiles/fish/ ~/.config/
-ln -sf ~/dotfiles/starship.toml ~/.config/
-ln -sf ~/dotfiles/bat/ ~/.config/
+ln -sfv ~/dotfiles/nvim/ ~/.config/
+ln -sfv ~/dotfiles/fish/ ~/.config/
+ln -sfv ~/dotfiles/starship.toml ~/.config/
+ln -sfv ~/dotfiles/bat/ ~/.config/
 
 echo 'Complete!!'
