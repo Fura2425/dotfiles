@@ -1,8 +1,5 @@
 starship init fish | source
 
-# hub
-eval (hub alias -s)
-
 # done
 set -U __done_min_cmd_duration 5000  # default: 5000 ms
 set -U __done_notify_sound 1

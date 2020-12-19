@@ -5,6 +5,7 @@ let g:wakatime_PythonBinary = '/usr/bin/python'  " (Default: 'python')
 " 基本設定
 """"""""""""""""""""""""""""""""""
 set encoding=utf-8
+let $LANG = 'en'
 set number "行番号の表示
 set relativenumber "行番号相対表示
 set title "編集中のファイル名を表示

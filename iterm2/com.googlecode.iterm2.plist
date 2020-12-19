@@ -2,6 +2,10 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>AllowClipboardAccess</key>
+	<true/>
+	<key>AutoHideTmuxClientSession</key>
+	<true/>
 	<key>Control</key>
 	<integer>1</integer>
 	<key>Custom Color Presets</key>
@@ -3321,7 +3325,7 @@
 	<key>DimOnlyText</key>
 	<false/>
 	<key>FlashTabBarInFullscreen</key>
-	<true/>
+	<false/>
 	<key>HapticFeedbackForEsc</key>
 	<false/>
 	<key>HideActivityIndicator</key>
@@ -3331,9 +3335,9 @@
 	<key>HideScrollbar</key>
 	<false/>
 	<key>HideTab</key>
-	<false/>
+	<true/>
 	<key>HideTabNumber</key>
-	<false/>
+	<true/>
 	<key>Hotkey</key>
 	<false/>
 	<key>HotkeyChar</key>
@@ -3537,6 +3541,8 @@
 				<key>Red Component</key>
 				<real>1</real>
 			</dict>
+			<key>Blend</key>
+			<real>0.47915304293807265</real>
 			<key>Blinking Cursor</key>
 			<true/>
 			<key>Blur</key>
@@ -3955,6 +3961,8 @@
 				<key>Red Component</key>
 				<real>0.0</real>
 			</dict>
+			<key>Minimum Contrast</key>
+			<real>0.0</real>
 			<key>Mouse Reporting</key>
 			<true/>
 			<key>Name</key>
@@ -4412,7 +4420,7 @@
 			<key>Triggers</key>
 			<array/>
 			<key>Unicode Version</key>
-			<integer>9</integer>
+			<integer>8</integer>
 			<key>Unlimited Scrollback</key>
 			<false/>
 			<key>Use Bold Font</key>
@@ -4445,6 +4453,8 @@
 	<false/>
 	<key>OpenNoWindowsAtStartup</key>
 	<true/>
+	<key>OpenTmuxWindowsIn</key>
+	<integer>1</integer>
 	<key>PMPrintingExpandedStateForPrint2</key>
 	<false/>
 	<key>PerPaneBackgroundImage</key>
@@ -4488,12 +4498,14 @@
 	<false/>
 	<key>Print In Black And White</key>
 	<true/>
+	<key>QuitWhenAllWindowsClosed</key>
+	<false/>
 	<key>SeparateStatusBarsPerPane</key>
 	<false/>
 	<key>SeparateWindowTitlePerTab</key>
 	<true/>
 	<key>ShowFullScreenTabBar</key>
-	<true/>
+	<false/>
 	<key>ShowNewOutputIndicator</key>
 	<true/>
 	<key>ShowPaneTitles</key>
@@ -4501,7 +4513,7 @@
 	<key>SoundForEsc</key>
 	<false/>
 	<key>SplitPaneDimmingAmount</key>
-	<real>0.15605884308510637</real>
+	<real>0.1454277126945584</real>
 	<key>StatusBarPosition</key>
 	<integer>0</integer>
 	<key>StretchTabsToFillBar</key>
