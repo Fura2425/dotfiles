@@ -20,11 +20,11 @@ let g:quickrun_config = {
             \	'hook/time/enable' : 1,
             \},
             \'c' : {
-            \	'command' : '/usr/local/Cellar/llvm/11.0.0/bin/clang',
+            \	'command' : 'clang',
             \	'hook/sweep/files': '%S:p:r',
             \},
             \'cpp' : {
-            \	'command' : '/usr/local/Cellar/llvm/11.0.0/bin/clang++',
+            \	'command' : 'clang++',
             \	'hook/sweep/files': '%S:p:r',
             \},
             \'rust' : {

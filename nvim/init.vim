@@ -1,6 +1,15 @@
-let g:python_host_prog  = '/usr/bin/python'
-let g:python3_host_prog = '/usr/local/bin/python3.9'
-let g:wakatime_PythonBinary = '/usr/bin/python'  " (Default: 'python')
+if has('unix')
+    let g:python_host_prog  = '$HOME/.pyenv/shims/python'
+    let g:python3_host_prog = '$HOME/.pyenv/shims/python3'
+    let g:wakatime_PythonBinary = '$HOME/.pyenv/shims/python'  " (Default: 'python')
+endif
+if has('mac')
+    let g:python_host_prog  = '/usr/bin/python'
+    let g:python3_host_prog = '/usr/local/bin/python3.9'
+    let g:wakatime_PythonBinary = '/usr/bin/python'  " (Default: 'python')
+endif
+
+
 """"""""""""""""""""""""""""""""""
 " 基本設定
 """"""""""""""""""""""""""""""""""

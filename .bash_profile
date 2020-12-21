@@ -9,6 +9,21 @@ alias brew='PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin brew'
 export JAVA_HOME=`/usr/libexec/java_home`
 
 
+# gawk gnu-sed gmp mpfr libmpc isl zlib expat
+# risc-v
+#export PATH="/usr/local/opt/expat/bin:$PATH"
+#export LDFLAGS="-L/usr/local/opt/zlib/lib"
+#export CPPFLAGS="-I/usr/local/opt/zlib/include"
+#export LDFLAGS="-L/usr/local/opt/expat/lib"
+#export CPPFLAGS="-I/usr/local/opt/expat/include"
+
+# risc-v
+#GNU "sed" has been installed as "gsed".
+#If you need to use it as "sed", you can add a "gnubin" directory
+#to your PATH from your bashrc like:
+export PATH="/usr/local/opt/gnu-sed/libexec/gnubin:$PATH"
+export PATH=$PATH:/usr/local/opt/riscv-gnu-toolchain/bin
+
 # rust
 export PATH="$HOME/.cargo/bin:$PATH"
 # rust sdl
