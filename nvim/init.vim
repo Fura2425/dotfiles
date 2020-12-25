@@ -62,7 +62,7 @@ nnoremap k gk
 nnoremap gj j
 nnoremap gk k
 
-" ページ移動
+" スクロール移動
 noremap <C-n> <C-f>
 noremap <C-p> <C-b>
 
@@ -71,6 +71,13 @@ noremap  <C-h> <C-w>h
 noremap <C-j> <C-w>j
 noremap<C-k> <C-w>k
 noremap <C-l> <C-w>l
+
+" ウィンドウ分割
+nmap ss :new<Return><C-w>w
+nmap sv :vnew<Return><C-w>w
+
+" タブ
+nmap te :tabedit
 
 " その他
 noremap <silent> <Esc><Esc> :nohlsearch<CR> " D-escによるハイライト消去
@@ -85,7 +92,7 @@ inoremap <silent> <C-f> <Esc>
 inoremap <C-k> <C-o>gk
 inoremap <C-l> <right>
 
-inoremap <C-j> <Esc>a<CR>
+"inoremap <C-j> <Esc>a<CR>
 
 
 

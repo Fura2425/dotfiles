@@ -41,6 +41,9 @@ hook_add = '''
 	source ~/.config/nvim/plugins/defx.rc.vim
 '''
 
+[[plugins]] # バッファー系プラグイン
+repo = 'jlanzarotta/bufexplorer'
+
 [[plugins]] # 括弧編集系プラグイン
 repo = 'tpope/vim-surround'
 
@@ -57,6 +60,9 @@ hook_add = '''
 # Git系プラグイン#############
 [[plugins]]
 repo = 'tpope/vim-fugitive'
+
+[[plugins]]
+repo = 'tpope/vim-rhubarb'
 
 [[plugins]]
 repo = 'airblade/vim-gitgutter'
