@@ -36,6 +36,8 @@ alias wpb='cd ~/workspace/programming/binary'
 alias wpj='cd ~/workspace/projects'
 
 alias n='nvim'
+alias t='tmux'
+alias ide='$HOME/dotfiles/.scripts/ide.sh'
 alias j='z'
 alias lg='lazygit'
 
