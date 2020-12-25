@@ -16,5 +16,15 @@ alias wpb='cd ~/workspace/programming/binary'
 alias wpj='cd ~/workspace/projects'
 
 alias n='nvim'
+alias t='tmux'
+alias ide='$HOME/dotfiles/.scripts/ide.sh'
 alias j='z'
 alias lg='lazygit'
+alias cat='bat'
+
+alias silicon='silicon --shadow-blur-radius 15 --background "#5550" --font "Ricty"'
+
+# Ghidra
+alias ghidra='open /Applications/ghidra_9.1.1_PUBLIC/ghidraRun'
+
+alias ownC='docker run --rm -v $HOME/workspace/projects/ownC-Language/:/ownC-Language -w /ownC-Language compilerbook'

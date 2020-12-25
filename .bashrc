@@ -40,6 +40,7 @@ alias t='tmux'
 alias ide='$HOME/dotfiles/.scripts/ide.sh'
 alias j='z'
 alias lg='lazygit'
+alias cat='bat'
 
 alias silicon='silicon --shadow-blur-radius 15 --background "#5550" --font "Ricty"'
 
