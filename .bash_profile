@@ -1,6 +1,8 @@
 # 何のためのやつか忘れたやつ
 # export PATH=~/jdk-11.0.2/bin:$PATH
 
+export BASH_SILENCE_DEPRECATION_WARNING=1
+
 export PATH='/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:$PATH'
 
 alias brew='PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin brew'
@@ -34,6 +36,11 @@ export LIBRARY_PATH="$LIBRARY_PATH:/usr/local/lib"
 #export GOPATH=$HOME/golang/go
 #export PATH=$GOPATH/bin:$PATH
 #export GO111MODULE=on
+
+
+# anyenv
+export PATH=$HOME/.anyenv/bin:$PATH
+eval "$(anyenv init -)"
 
 
 # python
