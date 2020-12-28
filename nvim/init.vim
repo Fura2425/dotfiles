@@ -92,7 +92,8 @@ inoremap <silent> <C-f> <Esc>
 inoremap <C-k> <C-o>gk
 inoremap <C-l> <right>
 
-"inoremap <C-j> <Esc>a<CR>
+inoremap <C-j> <Esc>a<CR>
+"inoremap <C-j> <Down>
 
 
 
