@@ -62,15 +62,14 @@ noremap<C-k> <C-w>k
 noremap <C-l> <C-w>l
 
 " その他
-noremap <silent> <Esc> :nohlsearch<CR> " D-escによるハイライト消去
+noremap <silent> <Esc><Esc> :nohlsearch<CR> " D-escによるハイライト消去
 noremap <silent> <Space><Space> "zyiw:let @/ = '\<' . @z . '\>'<CR>:set hlsearch<CR>
 
 
 inoremap <silent> <C-f> <ESC>
 
 " インサートモードでのカーソル移動
-inoremap <C-j> <down>
 inoremap <C-k> <up>
 inoremap <C-l> <right>
 
-
+inoremap <C-j> <Esc>a<CR>
