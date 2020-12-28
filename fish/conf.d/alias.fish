@@ -27,4 +27,5 @@ alias silicon='silicon --shadow-blur-radius 15 --background "#5550" --font "Rict
 # Ghidra
 alias ghidra='open /Applications/ghidra_9.1.1_PUBLIC/ghidraRun'
 
-alias ownC='docker run --rm -v $HOME/workspace/projects/ownC-Language/:/ownC-Language -w /ownC-Language compilerbook'
+# docker
+alias ownC='docker run --rm -v $HOME/workspace/projects/c-compiler-tutorial/:/c-compiler-tutorial -w /c-compiler-tutorial compilerbook'

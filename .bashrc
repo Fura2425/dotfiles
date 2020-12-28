@@ -47,6 +47,8 @@ alias silicon='silicon --shadow-blur-radius 15 --background "#5550" --font "Rict
 # Ghidra
 alias ghidra='open /Applications/ghidra_9.1.1_PUBLIC/ghidraRun'
 
+# docker
+alias ownC='docker run --rm -v $HOME/workspace/projects/c-compiler-tutorial/:/c-compiler-tutorial -w /c-compiler-tutorial compilerbook'
 
 function llvm (){
 	export PATH="/usr/local/opt/llvm/bin:$PATH"
