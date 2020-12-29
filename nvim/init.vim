@@ -14,6 +14,8 @@ endif
 " 基本設定
 """"""""""""""""""""""""""""""""""
 set encoding=utf-8
+set fileformats=unix,dos,mac
+set fileencodings=utf-8,sjis
 let $LANG = 'en'
 set number "行番号の表示
 set relativenumber "行番号相対表示
