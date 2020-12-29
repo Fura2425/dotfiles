@@ -3546,9 +3546,9 @@
 			<key>Blinking Cursor</key>
 			<true/>
 			<key>Blur</key>
-			<true/>
+			<false/>
 			<key>Blur Radius</key>
-			<real>2.2527383407360406</real>
+			<real>10.216376865033022</real>
 			<key>Bold Color</key>
 			<dict>
 				<key>Blue Component</key>
