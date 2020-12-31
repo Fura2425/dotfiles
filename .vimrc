@@ -64,7 +64,7 @@ noremap <C-l> <C-w>l
 
 " ウィンドウ分割
 nmap ss :new<Return><C-w>w
-nmap sv :vnew<Return><C-w>w
+nmap sv :vnew<Return>
 
 " タブ
 nmap te :tabedit
@@ -120,7 +120,7 @@ set statusline+=%P    " ファイル内の何％の位置にあるか
 """"""""""""""""""""""""""""""""""
 " ハイライト
 """"""""""""""""""""""""""""""""""
-highlight Pmenu ctermfg=245 ctermbg=232 guibg=#080808
+highlight Pmenu ctermfg=250 ctermbg=235 guibg=#262626
 highlight PmenuSel ctermfg=0 ctermbg=13 guibg=#ff00ff
 
 
