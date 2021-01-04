@@ -11,7 +11,7 @@ set title "編集中のファイル名を表示
 set showmatch "括弧に対応する括弧を強調表示
 set matchpairs=(:),{:},[:],<:> "括弧対応判定設定
 set backspace=indent,eol,start "バックスペースを機能させる
-set clipboard+=unnamed "クリップボード連携を有効化
+set clipboard=unnamed "クリップボード連携を有効化
 set splitright "分割ウィンドウは右に生成
 set updatetime=100 "100msでswapファイルに書き込み
 
