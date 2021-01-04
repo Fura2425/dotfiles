@@ -1,9 +1,10 @@
 #export PS1="╭─\u@\h:\W \n╰─|ω･)ﾁﾗ ≺"
-    if [ -f /etc/bash_completion ]; then
-        . /etc/bash_completion
+    if [ -f /usr/local/etc/bash_completion.d/git-completion.bash ]; then
+        source /usr/local/etc/bash_completion.d/git-completion.bash
     fi
-    if [ -f /etc/bash_completion.d/git-prompt ]; then
-        export PS1='\[\033[01;32m\]\u@\h\[\033[01;33m\] \w$(__git_ps1) \n\[\033[01;34m\]>\[\033[00m\] '
+    if [ -f /usr/local/etc/bash_completion.d/git-prompt.sh ]; then
+        source /usr/local/etc/bash_completion.d/git-prompt.sh
+        export PS1='\033[01;39m\]╭─\[\033[01;32m\]\u@\h\[\033[01;33m\] \w$(__git_ps1) \n\[\033[01;39m\]╰─|ω･)ﾁﾗ ≺\[\033[00m\] '
     else
         export PS1='\033[01;39m\]╭─\[\033[01;32m\]\u@\h\[\033[01;33m\] \w \n\[\033[01;39m\]╰─|ω･)ﾁﾗ ≺\[\033[00m\] '
     fi
