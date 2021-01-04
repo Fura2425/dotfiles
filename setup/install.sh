@@ -15,6 +15,6 @@ done
 ln -sfv ~/dotfiles/nvim/ ~/.config/
 ln -sfv ~/dotfiles/fish/ ~/.config/
 ln -sfv ~/dotfiles/starship.toml ~/.config/
-ln -sfv ~/dotfiles/bat/ ~/.config/
+ln -sfv ~/dotfiles/templates/bat/ ~/.config/
 
 echo 'Complete!!'
