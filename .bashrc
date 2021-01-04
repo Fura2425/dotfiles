@@ -36,14 +36,15 @@ alias wpb='cd ~/workspace/programming/binary'
 alias wpj='cd ~/workspace/projects'
 
 alias n='nvim'
-alias ide='$HOME/dotfiles/.scripts/ide.sh'
+alias ide='source ~/dotfiles/scripts/ide.sh'
 alias j='z'
 alias lg='lazygit'
 alias cat='bat'
 
 # tmux
-alias t='tmux'
+alias t='tmux -u'
 alias ta='tmux a'
+alias tl='tmux ls'
 
 alias silicon='silicon --shadow-blur-radius 15 --background "#5550" --font "Ricty"'
 
