@@ -4,8 +4,8 @@ if has('unix')
     let g:wakatime_PythonBinary = '$HOME/.pyenv/shims/python'  " (Default: 'python')
 endif
 if has('mac')
-    let g:python_host_prog  = '/usr/bin/python'
-    let g:python3_host_prog = '/usr/local/bin/python3.9'
+    let g:python_host_prog  = '$HOME/.anyenv/envs/pyenv/shims/python2'
+    let g:python3_host_prog = '$HOME/.anyenv/envs/pyenv/shims/python3'
     let g:wakatime_PythonBinary = '/usr/bin/python'  " (Default: 'python')
 endif
 
@@ -82,7 +82,7 @@ nmap sv :vnew<Return>
 nmap te :tabedit
 
 " その他
-noremap <silent> <Esc><Esc> :nohlsearch<CR> " D-escによるハイライト消去
+noremap <silent> <Esc><Esc> :nohlsearch<CR> " ハイライト消去
 noremap <silent> <Space><Space> "zyiw:let @/ = '\<' . @z . '\>'<CR>:set hlsearch<CR>
 noremap <silent> == gg=G :<C-u> FixWhitespace <CR> " インデント整形＆余分空白削除
 
@@ -191,6 +191,6 @@ syntax enable
 "End dein Scripts----------------------------------------------------------
 
 
-"自動コメントアウト無効化
+"改行時自動コメントアウト無効化
 autocmd FileType * setlocal formatoptions-=r
 autocmd FileType * setlocal formatoptions-=o
