@@ -44,6 +44,12 @@ hook_add = '''
 [[plugins]] # バッファー系プラグイン
 repo = 'jlanzarotta/bufexplorer'
 
+[[plugins]] # Undo系プラグイン
+repo = 'simnalamburt/vim-mundo'
+hook_add = '''
+    source ~/.config/nvim/plugins/vim-mundo.rc.vim
+'''
+
 [[plugins]] # 括弧編集系プラグイン
 repo = 'tpope/vim-surround'
 
@@ -51,6 +57,12 @@ repo = 'tpope/vim-surround'
 repo = 'alvan/vim-closetag'
 hook_add = '''
     source ~/.config/nvim/plugins/vim-closetag.rc.vim
+'''
+
+[[plugins]] # タグリスト表示
+repo = 'preservim/tagbar'
+hook_add = '''
+	source ~/.config/nvim/plugins/tagbar.rc.vim
 '''
 
 [[plugins]] # ウィンドウサイジング
@@ -107,12 +119,6 @@ hook_add = '''
 repo = 'sheerun/vim-polyglot'
 hook_add = '''
 	source ~/.config/nvim/plugins/vim-polyglot.rc.vim
-'''
-
-[[plugins]] # タグリスト表示
-repo = 'preservim/tagbar'
-hook_add = '''
-	source ~/.config/nvim/plugins/tagbar.rc.vim
 '''
 
 ############################
