@@ -1,5 +1,9 @@
 starship init fish | source
 
+# anyenv
+set -x PATH $HOME/.anyenv/bin $PATH
+eval (anyenv init - | source)
+
 # done
 set -U __done_min_cmd_duration 5000  # default: 5000 ms
 set -U __done_notify_sound 1
