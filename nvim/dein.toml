@@ -47,6 +47,12 @@ repo = 'jlanzarotta/bufexplorer'
 [[plugins]] # 括弧編集系プラグイン
 repo = 'tpope/vim-surround'
 
+[[plugins]] # タグの自動補完
+repo = 'alvan/vim-closetag'
+hook_add = '''
+    source ~/.config/nvim/plugins/vim-closetag.rc.vim
+'''
+
 [[plugins]] # ウィンドウサイジング
 repo = 'simeji/winresizer'
 
@@ -122,9 +128,4 @@ hook_add = '''
     source ~/.config/nvim/plugins/vim-silicon.rc.vim
 '''
 
-[[plugins]] # markdown preview
-repo = 'previm/previm'
-hook_add = '''
-	source ~/.config/nvim/plugins/previm.rc.vim
-'''
 ############################

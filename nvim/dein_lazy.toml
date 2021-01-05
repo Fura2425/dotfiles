@@ -2,9 +2,9 @@
 repo = 'cohama/lexima.vim'
 on_i = 1
 
-[[plugins]] # タグの自動補完
-repo = 'alvan/vim-closetag'
-on_ft = ['html', 'xml']
+[[plugins]] # markdown preview
+repo = 'previm/previm'
+on_ft = ['markdown']
 hook_add = '''
-    source ~/.config/nvim/plugins/vim-closetag.rc.vim
+	source ~/.config/nvim/plugins/previm.rc.vim
 '''
