@@ -19,7 +19,7 @@ else
                 tmux select-pane -L
                 tmux split-window -v
                 tmux split-window -h
-                tmux select-pane -t 4
+                tmux select-pane -t 3
                 clear
                 ;;
             "low")
