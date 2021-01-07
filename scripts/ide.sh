@@ -33,7 +33,7 @@ else
                 tmux clock
                 tmux resize-pane -U 19
                 tmux set-option pane-border-format "#[fg=colour0,bg=colour7](#{b:pane_current_path}) #P #(echo $SHELL)"
-                export PS1="\033[01;32m\]\$ \e[m\]"
+                export PS1="\[\033[01;32m\]\$ \[\e[0m\]"
                 tmux select-pane -t 1
                 tmux select-pane -t 2
                 clear
