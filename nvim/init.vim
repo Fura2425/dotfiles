@@ -87,7 +87,7 @@ noremap <silent> <Space><Space> "zyiw:let @/ = '\<' . @z . '\>'<CR>:set hlsearch
 noremap <silent> == gg=G :<C-u> FixWhitespace <CR> " インデント整形＆余分空白削除
 
 
-"" インサートモード
+" インサートモード
 inoremap <silent> <C-f> <Esc>
 
 " インサートモードでのカーソル移動
