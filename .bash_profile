@@ -3,9 +3,12 @@
 
 export BASH_SILENCE_DEPRECATION_WARNING=1
 
-export PATH='/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:$PATH'
-
+export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:$PATH"
 alias brew='PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin brew'
+
+export EDITOR="vim"
+eval "$(direnv hook bash)"
+
 
 # java ;xml LSP のため
 export JAVA_HOME=`/usr/libexec/java_home`
@@ -47,3 +50,5 @@ eval "$(anyenv init -)"
 if [ -f ~/.bashrc ] ; then
     . ~/.bashrc
 fi
+
+export PATH=$(echo "$PATH" | awk -v RS=':' '!a[$1]++ { if (NR > 1) printf RS; printf $1 }')
