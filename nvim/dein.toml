@@ -53,6 +53,12 @@ hook_add = '''
 [[plugins]] # 括弧編集系プラグイン
 repo = 'tpope/vim-surround'
 
+[[plugins]] # テキスト移動
+repo = 't9md/vim-textmanip'
+hook_add = '''
+    source ~/.config/nvim/plugins/vim-textmanip.rc.vim
+'''
+
 [[plugins]] # タグの自動補完
 repo = 'alvan/vim-closetag'
 hook_add = '''
