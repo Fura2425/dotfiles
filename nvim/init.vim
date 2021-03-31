@@ -65,8 +65,8 @@ nnoremap gj j
 nnoremap gk k
 
 " スクロール移動
-noremap <C-n> <C-f>
-noremap <C-p> <C-b>
+"noremap <C-n> <C-f>
+"noremap <C-p> <C-b>
 
 " ウィンドウ移動
 noremap  <C-h> <C-w>h
