@@ -59,10 +59,10 @@ let mapleader = "\<Space>" "Leaderキーをスペースキーに変更
 "" ノーマルモード
 
 " 行移動
-nnoremap j gj
-nnoremap k gk
-nnoremap gj j
-nnoremap gk k
+"nnoremap j gj
+"nnoremap k gk
+"nnoremap gj j
+"nnoremap gk k
 
 " スクロール移動
 "noremap <C-n> <C-f>
