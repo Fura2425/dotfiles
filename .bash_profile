@@ -1,10 +1,10 @@
 # 何のためのやつか忘れたやつ
 # export PATH=~/jdk-11.0.2/bin:$PATH
 
+# zsh推奨警告を消す
 export BASH_SILENCE_DEPRECATION_WARNING=1
 
 export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:$PATH"
-alias brew='PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin brew'
 
 export EDITOR="vim"
 eval "$(direnv hook bash)"
@@ -46,9 +46,21 @@ export PATH=$HOME/.anyenv/bin:$PATH
 eval "$(anyenv init -)"
 
 
+# bat
+export BAT_CONFIG_PATH="$HOME/.config/bat/config/bat.conf"
+
+
+# fzf
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash
+export FZF_DEFAULT_OPTS='--height 60% --reverse --border'
+export FZF_CTRL_T_OPTS='--preview "bat  --color=always --style=header,grid --line-range :100 {}"'
+export FZF_ALT_C_OPTS="--preview 'tree -C {} | head -200'"
+
+
 # .bash_profile内で.bashrcを読み込む
 if [ -f ~/.bashrc ] ; then
     . ~/.bashrc
 fi
 
+# 重複したPATHを消す
 export PATH=$(echo "$PATH" | awk -v RS=':' '!a[$1]++ { if (NR > 1) printf RS; printf $1 }')

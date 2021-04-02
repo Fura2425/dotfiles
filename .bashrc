@@ -1,13 +1,13 @@
 #export PS1="╭─\u@\h:\W \n╰─|ω･)ﾁﾗ ≺"
-    if [ -f /usr/local/etc/bash_completion.d/git-completion.bash ]; then
-        source /usr/local/etc/bash_completion.d/git-completion.bash
-    fi
-    if [ -f /usr/local/etc/bash_completion.d/git-prompt.sh ]; then
-        source /usr/local/etc/bash_completion.d/git-prompt.sh
-        export PS1='\033[01;39m\]╭─\[\033[01;32m\]\u@\h\[\033[01;33m\] \w$(__git_ps1) \n\[\033[01;39m\]╰─|ω･)ﾁﾗ ≺\[\033[00m\] '
-    else
-        export PS1='\033[01;39m\]╭─\[\033[01;32m\]\u@\h\[\033[01;33m\] \w \n\[\033[01;39m\]╰─|ω･)ﾁﾗ ≺\[\033[00m\] '
-    fi
+if [ -f /usr/local/etc/bash_completion.d/git-completion.bash ]; then
+    source /usr/local/etc/bash_completion.d/git-completion.bash
+fi
+if [ -f /usr/local/etc/bash_completion.d/git-prompt.sh ]; then
+    source /usr/local/etc/bash_completion.d/git-prompt.sh
+    export PS1='\033[01;39m\]╭─\[\033[01;32m\]\u@\h\[\033[01;33m\] \w$(__git_ps1) \n\[\033[01;39m\]╰─|ω･)ﾁﾗ ≺\[\033[00m\] '
+else
+    export PS1='\033[01;39m\]╭─\[\033[01;32m\]\u@\h\[\033[01;33m\] \w \n\[\033[01;39m\]╰─|ω･)ﾁﾗ ≺\[\033[00m\] '
+fi
 
 
 # FB c6c8d1
@@ -42,6 +42,9 @@ alias j='z'
 alias lg='lazygit'
 alias cat='bat'
 
+# brew
+alias brew='PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin brew'
+
 # tmux
 alias t='tmux -u'
 alias ta='tmux a'
@@ -73,16 +76,6 @@ fi
 
 # zコマンド
 source ~/z/z.sh
-
-# bat
-export BAT_CONFIG_PATH="$HOME/.config/bat/config/bat.conf"
-
-# fzf
-[ -f ~/.fzf.bash ] && source ~/.fzf.bash
-export FZF_DEFAULT_OPTS='--height 60% --reverse --border'
-export FZF_CTRL_T_OPTS='--preview "bat  --color=always --style=header,grid --line-range :100 {}"'
-export FZF_ALT_C_OPTS="--preview 'tree -C {} | head -200'"
-
 
 # wakatime
 source ~/bash-wakatime/bash-wakatime.sh
