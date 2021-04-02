@@ -26,6 +26,7 @@ set backspace=indent,eol,start "バックスペースを機能させる
 set clipboard+=unnamed "クリップボード連携を有効化
 set splitright "分割ウィンドウは右に生成
 set updatetime=100 "100msでswapファイルに書き込み
+"set termguicolors "True Colorを使用する
 
 
 """""""""""""""""""""""""""""""""
