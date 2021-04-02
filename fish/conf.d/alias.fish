@@ -1,5 +1,3 @@
-alias ghidra='open /Applications/ghidra_9.1.1_PUBLIC/ghidraRun'
-
 alias ...='cd ../..'
 alias ....='cd ../../..'
 
