@@ -77,11 +77,8 @@ brew "riscv/riscv/riscv-gnu-toolchain"
 brew "riscv/riscv/riscv-tools"
 brew "sanemat/font/ricty"
 brew "universal-ctags/universal-ctags/universal-ctags", args: ["HEAD"]
-cask "blackhole"
 cask "docker"
 cask "font-hack-nerd-font"
-cask "hyper"
-cask "mpv"
 cask "xquartz"
 mas "Amphetamine", id: 937984704
 #mas "BetterSnapTool", id: 417375580
