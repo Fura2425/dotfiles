@@ -15,18 +15,17 @@ else
             "ros")
                 tmux rename-window ros
                 tmux split-window -h
-                tmux resize-pane -R 5
+                tmux resize-pane -L 4
                 tmux select-pane -L
                 tmux split-window -v
-                tmux split-window -h
+                tmux resize-pane -U 15
                 tmux select-pane -t 0
-                tmux select-pane -t 3
                 clear
                 ;;
             "low")
                 tmux rename-window low
                 tmux split-window -h
-                tmux resize-pane -L 53
+                tmux resize-pane -L 43
                 tmux select-pane -L
                 tmux split-window -v
                 tmux swap-pane -U
@@ -36,6 +35,14 @@ else
                 export PS1="\[\033[01;36m\]\$ \[\e[0m\]"
                 tmux select-pane -t 1
                 tmux select-pane -t 2
+                clear
+                ;;
+            "tile")
+                tmux rename-window tile
+                tmux split-window -h
+                tmux split-window -v
+                tmux select-pane -L
+                tmux split-window -v
                 clear
                 ;;
             *) echo "Invalid argument : $1" ;;
