@@ -4,12 +4,11 @@
 
 if [ ! $TMUX ]; then
     echo "Cannot run without being in tmux."
+    echo "Run TMUX."
 else
     if [ "$#" -eq 0 ]; then
-        echo -e "\n  Please enter an argument."
-        echo    "  list : ros;"
-        echo    "         low;"
-        echo -en "\n"
+        echo "Usage: ide <args>"
+        echo 'There are no argument ("ide --list" for list)'
     else
         case $1 in
             "ros")
@@ -44,6 +43,13 @@ else
                 tmux select-pane -L
                 tmux split-window -v
                 clear
+                ;;
+            "-l" | "--list")
+                echo -e "\n  Select the command and press Enter."
+                echo    "    list : ros;"
+                echo    "           low;"
+                echo    "           tile;"
+                echo
                 ;;
             *) echo "Invalid argument : $1" ;;
         esac

@@ -37,7 +37,6 @@ alias wpb='cd ~/workspace/programming/binary'
 alias wpj='cd ~/workspace/projects'
 
 alias n='nvim'
-alias ide='source ~/dotfiles/scripts/ide.sh'
 alias j='z'
 alias lg='lazygit'
 alias cat='bat'
@@ -50,6 +49,10 @@ alias t='tmux -u'
 alias ta='tmux a'
 alias tl='tmux ls'
 
+# ide
+alias ide='source $HOME/dotfiles/scripts/ide'
+
+# silicon
 alias silicon='silicon --shadow-blur-radius 15 --background "#5550" --font "Ricty"'
 
 # Ghidra
