@@ -1,2 +1,2 @@
-set -g default-command "reattach-to-user-namespace -l ${SHELL}"
-#set -g default-command "reattach-to-user-namespace $SHELL --login"
+# tmux2.6以降は不要
+#set -g default-command "reattach-to-user-namespace -l ${SHELL}"
