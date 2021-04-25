@@ -11,24 +11,7 @@ else
         echo 'There are no argument ("ide --list" for list)'
     else
         case $1 in
-            "ros")
-                tmux rename-window ros
-                tmux split-window -h
-                tmux resize-pane -L 4
-                tmux select-pane -L
-                tmux split-window -v
-                tmux resize-pane -U 15
-                tmux select-pane -t 0
-                clear
-                ;;
-            "high")
-                tmux split-window -v
-                tmux split-window -h
-                tmux resize-pane -D 10
-                tmux select-pane -t 1
-                clear
-                ;;
-            "low")
+            "low" | "0")
                 tmux rename-window low
                 tmux split-window -h
                 tmux resize-pane -L 43
@@ -43,7 +26,24 @@ else
                 tmux select-pane -t 2
                 clear
                 ;;
-            "tile")
+            "high" | "1")
+                tmux split-window -v
+                tmux split-window -h
+                tmux resize-pane -D 10
+                tmux select-pane -t 1
+                clear
+                ;;
+            "ros" | "2")
+                tmux rename-window ros
+                tmux split-window -h
+                tmux resize-pane -L 4
+                tmux select-pane -L
+                tmux split-window -v
+                tmux resize-pane -U 15
+                tmux select-pane -t 0
+                clear
+                ;;
+            "tile" | "3")
                 tmux rename-window tile
                 tmux split-window -h
                 tmux split-window -v
@@ -53,10 +53,11 @@ else
                 ;;
             "-l" | "--list")
                 echo -e "\n  Select the command and press Enter."
-                echo    "    list : ros;"
-                echo    "           high;"
-                echo    "           low;"
-                echo    "           tile;"
+                echo    "    list:"
+                echo    "       0) low"
+                echo    "       1) high"
+                echo    "       2) ros"
+                echo    "       3) tile"
                 echo
                 ;;
             *) echo "Invalid argument : $1" ;;
