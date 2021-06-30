@@ -1,8 +1,8 @@
 starship init fish | source
 
-# anyenv
-set -x PATH $HOME/.anyenv/bin $PATH
-eval (anyenv init - | source)
+# anyenv (.fishファイルを開いた時なぜかエラーが出る)
+#set -x PATH $HOME/.anyenv/bin $PATH
+#eval (anyenv init - | source)
 
 # done
 set -U __done_min_cmd_duration 5000  # default: 5000 ms

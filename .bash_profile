@@ -4,8 +4,6 @@
 # zsh推奨警告を消す
 export BASH_SILENCE_DEPRECATION_WARNING=1
 
-export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:$PATH"
-
 export EDITOR="vim"
 eval "$(direnv hook bash)"
 
@@ -56,6 +54,8 @@ export FZF_DEFAULT_OPTS='--height 60% --reverse --border'
 export FZF_CTRL_T_OPTS='--preview "bat  --color=always --style=header,grid --line-range :100 {}"'
 export FZF_ALT_C_OPTS="--preview 'tree -C {} | head -200'"
 
+
+export PATH="/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin:$PATH"
 
 # .bash_profile内で.bashrcを読み込む
 if [ -f ~/.bashrc ] ; then

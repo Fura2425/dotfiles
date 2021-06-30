@@ -42,7 +42,7 @@ alias lg='lazygit'
 alias cat='bat'
 
 # brew
-alias brew='PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin brew'
+alias brew='PATH=/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin brew'
 
 # tmux
 alias t='tmux -u'
@@ -57,6 +57,13 @@ alias silicon='silicon --shadow-blur-radius 15 --background "#5550" --font "Rict
 
 # Ghidra
 alias ghidra='open /Applications/ghidra_9.1.1_PUBLIC/ghidraRun'
+
+# C/C++
+alias gcc='gcc-11'
+alias g++='g++-11'
+
+# GDB
+alias gdb='sudo gdb'
 
 # docker
 alias ownC='docker run --rm -v $HOME/workspace/projects/c-compiler-tutorial/:/c-compiler-tutorial -w /c-compiler-tutorial compilerbook'
