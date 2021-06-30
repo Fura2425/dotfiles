@@ -1,5 +1,5 @@
 nnoremap <Leader>q :<C-u>bw! \[quickrun\ output\]<CR>
-inoremap <silent> <C-r> <Esc>:<C-u> QuickRun <CR>
+"inoremap <silent> <C-r> <Esc>:<C-u> QuickRun <CR>
 
 """"""""""""""""""""""""""""""""""
 "QuickRunQuit
