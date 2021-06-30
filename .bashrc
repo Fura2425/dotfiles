@@ -18,22 +18,39 @@ fi
 # bind '"jj": vi-movement-mode' # Escを jj にキーバインド
 
 
+# function
+ls_notice(){
+    if [ -z "$(\ls $PWD)" ]; then
+            echo "The directory is empty."
+        else
+            if [ -n $(which exa) ]; then
+                \exa --icons $1
+            else
+                \ls -FG $1
+            fi
+        fi
+}
+
+cdls(){
+    \cd "$@" && printf '\n\033[1;37m%s\033[m\n' ' ls' && ls_notice
+}
+
+
 # エイリアス
+alias ls='ls_notice'
+alias ll='ls -l'
+alias la='ls -al'
+
+alias cd='cdls'
 alias ..='cd ..'
 alias ...='cd ../..'
 alias ....='cd ../../..'
-alias ls='ls -FG'
-alias ll='ls -lFG'
-alias la='ls -alFG'
-
 alias dot='cd ~/dotfiles'
-
 alias wp='cd ~/workspace/programming'
 alias wpr='cd ~/workspace/programming/rust'
 alias wpc='cd ~/workspace/programming/c'
 alias wpa='cd ~/workspace/programming/assembly'
 alias wpb='cd ~/workspace/programming/binary'
-
 alias wpj='cd ~/workspace/projects'
 
 alias n='nvim'
@@ -63,7 +80,7 @@ alias gcc='gcc-11'
 alias g++='g++-11'
 
 # GDB
-alias gdb='sudo gdb'
+alias gdb='sudo /usr/local/bin/gdb'
 
 # docker
 alias ownC='docker run --rm -v $HOME/workspace/projects/c-compiler-tutorial/:/c-compiler-tutorial -w /c-compiler-tutorial compilerbook'
