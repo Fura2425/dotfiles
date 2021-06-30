@@ -75,17 +75,15 @@ noremap <C-j> <C-w>j
 noremap<C-k> <C-w>k
 noremap <C-l> <C-w>l
 
-" ウィンドウ分割
-nmap ss :new<Return>
-nmap sv :vnew<Return>
-
 " タブ
 nmap te :tabedit
+
 
 " その他
 noremap <silent> <Esc><Esc> :nohlsearch<CR> " ハイライト消去
 noremap <silent> <Space><Space> "zyiw:let @/ = '\<' . @z . '\>'<CR>:set hlsearch<CR>
-noremap <silent> == gg=G :<C-u> FixWhitespace <CR> " インデント整形＆余分空白削除
+noremap <silent> '' ''zz
+noremap <silent> == gg=G'' :<C-u> FixWhitespace <CR> " インデント整形＆余分空白削除
 
 
 " インサートモード
@@ -189,7 +187,14 @@ endif
 filetype plugin indent on
 syntax enable
 
-"End dein Scripts----------------------------------------------------------
+"End dein Scripts-------------------------
+
+
+"fish Scripts-----------------------------
+if &shell =~# 'fish$'
+    set shell=bash
+endif
+"End dein Scripts-------------------------
 
 
 "改行時自動コメントアウト無効化
