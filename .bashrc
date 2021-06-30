@@ -20,7 +20,7 @@ fi
 
 # function
 ls_notice(){
-    if [ -z "$(\ls $PWD)" ]; then
+    if [ -z "$(\ls -A $PWD)" ]; then
             echo "The directory is empty."
         else
             if [ -n $(which exa) ]; then
@@ -39,7 +39,7 @@ cdls(){
 # エイリアス
 alias ls='ls_notice'
 alias ll='ls -l'
-alias la='ls -al'
+alias la='ls -Al'
 
 alias cd='cdls'
 alias ..='cd ..'
