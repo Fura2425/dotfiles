@@ -9,6 +9,17 @@ else
     export PS1='\033[01;39m\]╭─\[\033[01;32m\]\u@\h\[\033[01;33m\] \w \n\[\033[01;39m\]╰─|ω･)ﾁﾗ ≺\[\033[00m\] '
 fi
 
+psdef(){
+    if [ -f /usr/local/etc/bash_completion.d/git-prompt.sh ]; then
+        source /usr/local/etc/bash_completion.d/git-prompt.sh
+        export PS1='\033[01;39m\]╭─\[\033[01;32m\]\u@\h\[\033[01;33m\] \w$(__git_ps1) \n\[\033[01;39m\]╰─|ω･)ﾁﾗ ≺\[\033[00m\] '
+    else
+        export PS1='\033[01;39m\]╭─\[\033[01;32m\]\u@\h\[\033[01;33m\] \w \n\[\033[01;39m\]╰─|ω･)ﾁﾗ ≺\[\033[00m\] '
+    fi
+}
+psdol(){
+    export PS1="\[\033[01;36m\]\$ \[\e[0m\]"
+}
 
 # FB c6c8d1
 # BG 161821
@@ -30,13 +41,11 @@ ls_notice(){
             fi
         fi
 }
-
 cdls(){
     \cd "$@" && printf '\n\033[1;37m%s\033[m\n' ' ls' && ls_notice
 }
 
-
-# エイリアス
+# alias
 alias ls='ls_notice'
 alias ll='ls -l'
 alias la='ls -Al'
@@ -54,7 +63,7 @@ alias wpb='cd ~/workspace/programming/binary'
 alias wpj='cd ~/workspace/projects'
 
 alias n='nvim'
-alias j='z'
+alias j='zls'
 alias lg='lazygit'
 alias cat='bat'
 
@@ -67,7 +76,7 @@ alias ta='tmux a'
 alias tl='tmux ls'
 
 # ide
-alias ide='source $HOME/dotfiles/scripts/ide'
+alias ide='~/dotfiles/scripts/ide'
 
 # silicon
 alias silicon='silicon --shadow-blur-radius 15 --background "#5550" --font "Ricty"'
@@ -93,16 +102,22 @@ function llvm (){
 }
 
 # trash
-if type trash-put &> /dev/null
-then
-    alias rm=trash-put
+if type trash > /dev/null 2>&1; then
+    alias rm='trash'
 fi
+
+# z command
+source ~/z/z.sh
+zls(){
+    z "$@" && printf '\n\033[1;37m%s\033[m\n' ' ls' && ls_notice
+}
 
 # hub
 #eval "$(hub alias -s)"
 
-# zコマンド
-source ~/z/z.sh
+# done (original)
+#/usr/bin/osascript -e 'display notification "hogehoge" with title "iTerm" subtitle "done." sound name "Submarine"'
+
 
 # wakatime
 source ~/bash-wakatime/bash-wakatime.sh

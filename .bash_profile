@@ -34,9 +34,9 @@ export LIBRARY_PATH="$LIBRARY_PATH:/usr/local/lib"
 
 
 # go
-#export GOPATH=$HOME/golang/go
-#export PATH=$GOPATH/bin:$PATH
-#export GO111MODULE=on
+export GOPATH=$HOME/go
+export PATH=$GOPATH/bin:$PATH
+export GO111MODULE=on
 
 
 # anyenv

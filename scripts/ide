@@ -4,7 +4,7 @@
 
 if [ ! $TMUX ]; then
     echo "Cannot run without being in tmux."
-    echo "Run TMUX."
+    echo "run command 'tmux'"
 else
     if [ "$#" -eq 0 ]; then
         echo "Usage: ide <args>"
@@ -14,16 +14,15 @@ else
             "low" | "0")
                 tmux rename-window low
                 tmux split-window -h
-                tmux resize-pane -L 43
-                tmux select-pane -L
+                tmux resize-pane -L 35
+                tmux select-pane -t 0
+                tmux send-keys -t 0 "export PS1='\[\033[01;32m\] Other Spase: \[\e[0m\]' && clear" C-m
                 tmux split-window -v
-                tmux swap-pane -U
-                tmux clock
-                tmux resize-pane -U 19
-                tmux set-option pane-border-format "#[fg=colour0,bg=colour7](#{b:pane_current_path}) #P #(echo $SHELL)"
-                export PS1="\[\033[01;36m\]\$ \[\e[0m\]"
+                tmux resize-pane -U 10
+                tmux send-keys -t 1 "export PS1='\[\033[01;36m\]\$ \[\e[0m\]' && clear" C-m
                 tmux select-pane -t 1
                 tmux select-pane -t 2
+                tmux set-option pane-border-format "#[fg=colour0,bg=colour7](#{b:pane_current_path}) #P #(echo $SHELL)"
                 clear
                 ;;
             "high" | "1")
