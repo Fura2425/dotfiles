@@ -8,14 +8,17 @@ if [ -f /usr/local/etc/bash_completion.d/git-prompt.sh ]; then
     export PS2="         \[\e[01;37m\]≺ \[\e[0m\]"
 else
     export PS1='\e[01;37m\]╭─\[\e[01;32m\]\u@\h\[\e[01;33m\] \w \n\[\e[01;37m\]╰─|ω･)ﾁﾗ ≺\[\e[0m\] '
+    export PS2="         \[\e[01;37m\]≺ \[\e[0m\]"
 fi
 
 psdef(){
     if [ -f /usr/local/etc/bash_completion.d/git-prompt.sh ]; then
         source /usr/local/etc/bash_completion.d/git-prompt.sh
         export PS1='\e[01;37m\]╭─\[\e[01;32m\]\u@\h\[\e[01;33m\] \w$(__git_ps1) \n\[\e[01;37m\]╰─|ω･)ﾁﾗ ≺\[\e[0m\] '
+        export PS2="         \[\e[01;37m\]≺ \[\e[0m\]"
     else
         export PS1='\e[01;37m\]╭─\[\e[01;32m\]\u@\h\[\e[01;33m\] \w \n\[\e[01;37m\]╰─|ω･)ﾁﾗ ≺\[\e[0m\] '
+        export PS2="         \[\e[01;37m\]≺ \[\e[0m\]"
     fi
 }
 psdol(){
@@ -110,7 +113,7 @@ fi
 # z command
 source ~/z/z.sh
 zls(){
-    z "$@" && printf '\n\e[1;37m%s\e[m\n' ' ls' && ls_notice
+    z "$@" && printf '\n\e[1;37m%s\e[0m\n' ' ls' && ls_notice
 }
 
 # hub
