@@ -4,21 +4,22 @@ if [ -f /usr/local/etc/bash_completion.d/git-completion.bash ]; then
 fi
 if [ -f /usr/local/etc/bash_completion.d/git-prompt.sh ]; then
     source /usr/local/etc/bash_completion.d/git-prompt.sh
-    export PS1='\033[01;39m\]╭─\[\033[01;32m\]\u@\h\[\033[01;33m\] \w$(__git_ps1) \n\[\033[01;39m\]╰─|ω･)ﾁﾗ ≺\[\033[00m\] '
+    export PS1='\e[01;37m\]╭─\[\e[01;32m\]\u@\h\[\e[01;33m\] \w$(__git_ps1) \n\[\e[01;37m\]╰─|ω･)ﾁﾗ ≺\[\e[0m\] '
+    export PS2="         \[\e[01;37m\]≺ \[\e[0m\]"
 else
-    export PS1='\033[01;39m\]╭─\[\033[01;32m\]\u@\h\[\033[01;33m\] \w \n\[\033[01;39m\]╰─|ω･)ﾁﾗ ≺\[\033[00m\] '
+    export PS1='\e[01;37m\]╭─\[\e[01;32m\]\u@\h\[\e[01;33m\] \w \n\[\e[01;37m\]╰─|ω･)ﾁﾗ ≺\[\e[0m\] '
 fi
 
 psdef(){
     if [ -f /usr/local/etc/bash_completion.d/git-prompt.sh ]; then
         source /usr/local/etc/bash_completion.d/git-prompt.sh
-        export PS1='\033[01;39m\]╭─\[\033[01;32m\]\u@\h\[\033[01;33m\] \w$(__git_ps1) \n\[\033[01;39m\]╰─|ω･)ﾁﾗ ≺\[\033[00m\] '
+        export PS1='\e[01;37m\]╭─\[\e[01;32m\]\u@\h\[\e[01;33m\] \w$(__git_ps1) \n\[\e[01;37m\]╰─|ω･)ﾁﾗ ≺\[\e[0m\] '
     else
-        export PS1='\033[01;39m\]╭─\[\033[01;32m\]\u@\h\[\033[01;33m\] \w \n\[\033[01;39m\]╰─|ω･)ﾁﾗ ≺\[\033[00m\] '
+        export PS1='\e[01;37m\]╭─\[\e[01;32m\]\u@\h\[\e[01;33m\] \w \n\[\e[01;37m\]╰─|ω･)ﾁﾗ ≺\[\e[0m\] '
     fi
 }
 psdol(){
-    export PS1="\[\033[01;36m\]\$ \[\e[0m\]"
+    export PS1="\[\e[01;36m\]\$ \[\e[0m\]"
 }
 
 # FB c6c8d1
@@ -42,7 +43,7 @@ ls_notice(){
         fi
 }
 cdls(){
-    \cd "$@" && printf '\n\033[1;37m%s\033[m\n' ' ls' && ls_notice
+    \cd "$@" && printf '\n\e[1;37m%s\e[m\n' ' ls' && ls_notice
 }
 
 # alias
@@ -109,7 +110,7 @@ fi
 # z command
 source ~/z/z.sh
 zls(){
-    z "$@" && printf '\n\033[1;37m%s\033[m\n' ' ls' && ls_notice
+    z "$@" && printf '\n\e[1;37m%s\e[m\n' ' ls' && ls_notice
 }
 
 # hub
