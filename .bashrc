@@ -39,9 +39,9 @@ ls_notice(){
             echo "The directory is empty."
         else
             if [ -n $(which exa) ]; then
-                \exa --icons $1
+                \exa --icons $1 $2
             else
-                \ls -FG $1
+                \ls -FG $1 $2
             fi
         fi
 }
@@ -52,7 +52,11 @@ cdls(){
 # alias
 alias ls='ls_notice'
 alias ll='ls -l'
-alias la='ls -Al'
+if [ -n $(which exa) ]; then
+    alias la='ls -al'
+else
+    alias la='ls -Al'
+fi
 
 alias cd='cdls'
 alias ..='cd ..'
