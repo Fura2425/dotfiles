@@ -63,7 +63,7 @@ noremap <silent> <Space><Space> "zyiw:let @/ = '\<' . @z . '\>'<CR>:set hlsearch
 noremap <C-o> <C-o>zz
 noremap <C-i> <C-i>zz
 noremap <silent> '' ''zz
-noremap <silent> == m'gg=G'':<C-u> FixWhitespace <CR>    " インデント整形＆余分空白削除
+noremap <silent> == gg=G<C-o>zz:<C-u> FixWhitespace <CR>    " インデント整形＆余分空白削除
 
 " 行移動
 "nnoremap j gj
