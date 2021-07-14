@@ -58,6 +58,12 @@ set hlsearch "検索結果をハイライト表示
 let mapleader = "\<Space>" "Leaderキーをスペースキーに変更
 
 "" ノーマルモード
+noremap <silent> <Esc><Esc> :nohlsearch<CR> " ハイライト消去
+noremap <silent> <Space><Space> "zyiw:let @/ = '\<' . @z . '\>'<CR>:set hlsearch<CR>
+noremap <C-o> <C-o>zz
+noremap <C-i> <C-i>zz
+noremap <silent> '' ''zz
+noremap <silent> == m'gg=G'':<C-u> FixWhitespace <CR>    " インデント整形＆余分空白削除
 
 " 行移動
 "nnoremap j gj
@@ -77,13 +83,6 @@ noremap <C-l> <C-w>l
 
 " タブ
 nmap te :tabedit
-
-
-" その他
-noremap <silent> <Esc><Esc> :nohlsearch<CR> " ハイライト消去
-noremap <silent> <Space><Space> "zyiw:let @/ = '\<' . @z . '\>'<CR>:set hlsearch<CR>
-noremap <silent> '' ''zz
-noremap <silent> == gg=G'' :<C-u> FixWhitespace <CR> " インデント整形＆余分空白削除
 
 
 " インサートモード
