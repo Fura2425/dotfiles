@@ -39,14 +39,18 @@ ls_notice(){
             echo "The directory is empty."
         else
             if [ -n $(which exa) ]; then
-                \exa --icons $1 $2
+                if [ "$1" = "-t" ]; then
+                    \exa --icons --tree $2
+                else
+                    \exa --icons $1 $2
+                fi
             else
                 \ls -FG $1 $2
             fi
         fi
 }
 cdls(){
-    \cd "$@" && printf '\n\e[1;37m%s\e[m\n' ' ls' && ls_notice
+    \cd "$@" && clear && printf '\n\e[1;33m%s\e[m\n' $(pwd) && printf '\n\e[1;37m%s\e[m\n' ' ls' && ls_notice
 }
 
 # alias
