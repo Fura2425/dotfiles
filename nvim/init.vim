@@ -76,9 +76,9 @@ noremap <silent> == gg=G<C-o>zz:<C-u> FixWhitespace <CR>    " インデント整
 "noremap <C-p> <C-b>
 
 " ウィンドウ移動
-noremap  <C-h> <C-w>h
+noremap <C-h> <C-w>h
 noremap <C-j> <C-w>j
-noremap<C-k> <C-w>k
+noremap <C-k> <C-w>k
 noremap <C-l> <C-w>l
 
 " タブ
