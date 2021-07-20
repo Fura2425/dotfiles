@@ -1,2 +1,2 @@
-" nunmap ^E
-nnoremap <Leader>e :<C-u> WinResizerStartResize <CR>
+let g:winresizer_start_key = '<Leader>e'
+
