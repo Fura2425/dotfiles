@@ -50,7 +50,7 @@ ls_notice(){
         fi
 }
 cdls(){
-    \cd "$@" && clear && printf '\n\e[1;33m%s\e[m\n' $(pwd) && printf '\n\e[1;37m%s\e[m\n' ' ls' && ls_notice
+    \cd "$@" && clear -x && printf '\n\e[1;33m%s\e[m\n' $(pwd) && printf '\n\e[1;37m%s\e[m\n' ' ls' && ls_notice
 }
 
 # alias
